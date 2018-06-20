@@ -1,0 +1,148 @@
+/* 	Created by: Sri Ratna Wulan
+	Find more on wulan.rocks
+	Created date: 4/1/2018
+*/
+
+body.main {
+    background: white url("/static/images/background.png") repeat;
+}
+
+body.about {
+	background-color: white;
+    background-image: url("/static/images/ca164e55873724639e894096568bf983.jpg");
+	background-repeat: no-repeat;
+    background-position:  right bottom; 
+}
+
+.tree {
+	background-image: url("/static/images/ca164e55873724639e894096568bf983.jpg");
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+
+a {
+	color:#159b9b;
+}
+
+.mylogo {
+	margin:50px 0px 50px 0px;
+}
+
+.top-menu{
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+.nav-item.top-menu{
+	padding-right:20px;
+	padding-left:20px;
+}
+
+.big-title {
+	margin-top:80px;
+}
+
+.table {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.mycontainer{
+	background-color: rgba(255,255,255,1)
+}
+
+.myfooter {
+	margin-top:90px;
+	padding:30px 30px 20px 0px;
+	color: #868484;
+	background: #f8f9fa;
+}
+
+.footer-description{
+	margin-left:20px;
+}
+
+.myfooter a, .footer-description a{
+	color:#404453;
+}
+
+.myfooter a:hover, .footer-description a:hover{
+	text-decoration:underline;
+}
+
+.p-small {
+	font-size:small;
+	line-height:8px;
+}
+
+.social-media{
+	margin-left: 4px;
+	margin-bottom: 20px;
+}
+
+.pagination{
+	float:right;
+}
+
+.p-special {
+	font-size:x-large;
+	font-weight:bolder;
+}
+
+.mygallery{
+	margin-top:30px;
+	margin-bottom:30px;
+	background-color:#333;
+}
+
+.btn-blue{
+	background-color: #586fc2;
+    border-color: #1d2851;
+}
+
+.btn-blue:hover{
+	background-color: #1d2851;
+    border-color: #1d2851;
+}
+
+.btn-orange{
+	background-color: #f89a71;
+    border-color: #ef8050;
+	padding-right:30px;
+	padding-left:30px;
+	margin-top:10px;
+	
+}
+
+.btn-orange:hover{
+	background-color: #ef8050;
+    border-color: #ef8050;
+}
+
+.img-featured{
+	width:500px;
+	height:300px;
+	margin-top:20px;
+	margin-bottom:15px;
+	
+}
+
+
+label, input{
+	margin-bottom:10px;
+}
+
+li.media{
+	border-bottom: 1px dotted #f0531f;
+	padding:10px;
+}
+
+.my-card{
+	margin:20px;
+}
+
+h3.contact {
+	text-align: center;
+	margin:20px;
+}
+
+

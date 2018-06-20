@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"> 
+    
+	<title>Hello, world!</title>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse justify-content-md-center" id="navbarlogo">
+		<ul class="navbar-nav">
+            <li class="nav-item active">
+			<div class="mylogo"><img src="{% static 'images/logo4.png' %}" alt=""/></div>
+			</li>
+		</ul>
+		</div>
+	</nav>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	  </button>
+		<div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo01">
+          <ul class="navbar-nav">
+            <li class="nav-item top-menu active">
+              <a class="nav-link" href="{% url 'blogs:index' %}">Home</a>
+            </li>
+			<li class="nav-item top-menu dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown10">
+			  {% for cat in cat_list %}
+                <a class="dropdown-item" href="{% url 'blogs:category' cat.id %}">{{ cat.cat_name }}</a>
+				{% endfor %}
+              </div>
+			  
+            </li>			
+            <li class="nav-item top-menu ">
+              <a class="nav-link" href="{% url 'blogs:about' %}">About Me</a>
+            </li>
+             <li class="nav-item top-menu ">
+              <a class="nav-link" href="{% url 'blogs:contact' %}">Contact</a>
+            </li>
+			<li class="nav-item top-menu ">
+              <a class="nav-link" href="dunianyanara.blogspot.co.id">Blog</a>
+            </li>            
+          </ul>
+        </div>
+	</nav>
+	
+    <div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8 mycontainer">
+			  <div class="big-title">
+					
+					<h3>{{com_message}}</h3>
+							 
+					<img src="{% static 'images/new-email-interface-symbol-of-closed-envelope-back.png' %}" width=40px >
+							
+				</div>
+			</div>
+			
+			
+		  </div>
+		</div>
+	</div>	
+	<footer class="myfooter">
+		<div class="container-fluid p-small">
+			<div class="social-media">
+				<ul class="nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Twitter</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">GitHub</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Linkedln</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="https://naradluffy.tumblr.com">Tumblr</a>
+				  </li>				
+				</ul>
+			</div>
+			<div class="footer-description">
+				<p>Designed and built with all the love by <a href="https://wulan.rocks">@wulan</a>.</p>
+				<p>Using <a href="https://www.djangoproject.com/">Django 2.0</a> and <a href="https://getbootstrap.com/">Bootstrap 4.0</a>. </p>
+				<p>© 2018 <a href="https://wulan.rocks">wulan.rocks</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
